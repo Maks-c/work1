@@ -5,8 +5,26 @@
 }
 
 .footer-section {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+.footer_position-tablet {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.footer__adress {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
 }
 
 .footer-list .footer-list__item:not(:last-child) {
@@ -25,7 +43,13 @@
 }
 
 .footer-set {
-  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-title {
@@ -39,9 +63,15 @@
 
 .footer-icon {
   display: flex;
-  width: 206px;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-list__item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .footer-icon__link {
@@ -66,6 +96,11 @@
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .adress-text {
