@@ -1,8 +1,12 @@
 .footer-form {
   // margin-left: auto; na desk
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: inline-block;
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-left: 93px;
   }
 }
 
@@ -19,9 +23,6 @@
 .footer-form__content {
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 570px;
   }
 }
 
@@ -45,6 +46,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 
